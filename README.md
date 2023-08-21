@@ -4,7 +4,7 @@ Welcome to the Real-Time Stock Price Prediction Web Application, InvesTech repos
 
 ## :computer: Live
 
-[Watch the Demo Video](https://github.com/zohairbadshah/InvesTech/raw/main/demo/demo.mp4)
+https://github.com/zohairbadshah/InvesTech/assets/91787690/9b2ee17f-9d86-4340-b049-5eb0a35822dd
 
 ## :rocket: Highlights
 
