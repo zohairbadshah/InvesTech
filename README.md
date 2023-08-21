@@ -4,10 +4,7 @@ Welcome to the Real-Time Stock Price Prediction Web Application, InvesTech repos
 
 ## :computer: Live
 
-<video width="640" height="360" controls>
-  <source src="demo/demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[Watch the Demo Video](https://github.com/zohairbadshah/InvesTech/raw/main/demo/demo.mp4)
 
 ## :rocket: Highlights
 
