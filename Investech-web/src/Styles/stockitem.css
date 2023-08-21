@@ -1,0 +1,27 @@
+.stockitem-div{
+    width: 250px;
+    height: 100px;
+    border-radius: 8px;
+    margin-top: 30px;
+    transition: background-color 0.3s cursor 0.3s;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: black;
+
+
+
+    
+}
+
+.stockitem-div:hover{
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3); /* The box-shadow property */
+    border-radius: 20px;
+}
+
+.stockitem-div.clicked{
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3); /* The box-shadow property */
+    border-radius: 20px;
+
+}
+

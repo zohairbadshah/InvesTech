@@ -1,0 +1,25 @@
+.analysisbar-layout-container {
+    display: flex;
+    position: absolute;
+    flex-wrap: nowrap;
+    height: 69%;
+    width: 27%;
+    border-radius: 20px;
+    background-color: black;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* The box-shadow property */
+    margin-left: 71%;
+    margin-top: -480px;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3); /* The box-shadow property */  
+
+}
+
+
+@media screen and (max-width: 1000px) {
+    .analysisbar-layout-container {
+        margin-left: 265%;
+        margin-top: -460px;
+        width: 105%;
+        height: 63%;
+    
+    }
+}

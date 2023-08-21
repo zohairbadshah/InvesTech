@@ -1,0 +1,74 @@
+/* Sidebar.css */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  background-color: #000000;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 10px 40px rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 20px; /* Reduce the margin to bring the list items closer to the title */
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+  padding: 5px;
+  margin-bottom: 0px;
+}
+
+li {
+  margin-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+  display: inline-block;
+  border: 2px solid transparent;
+  padding: 10px 20px 0px 30px ;
+}
+
+a:hover {
+  background-color: #4635e3; /* Change the color to red (you can use any color you prefer) */
+  width: 100%;
+  height: 50px;
+  padding: 10px 0px 0px 10px;
+}
+
+a.clicked{
+  background-color: #4635e3; /* Change the color to red (you can use any color you prefer) */
+  width: 100%;
+  
+  height: 50px;
+  padding: 10px 0px 0px 10px;
+
+}
+
+
+@media screen and (max-width: 786px) {
+  .sidebar {
+    
+  width: 150px;
+  
+      
+  }
+
+  .sidebar-title{
+    margin-left: 0px;
+  }
+}

@@ -1,0 +1,38 @@
+.chartitem-div {
+  width: 800px;
+  height: 450px;
+  background-color: black;
+  padding: 20px;
+  border-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+  margin-left: 235px;
+  margin-top: 30px;
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.5); /* The box-shadow property */  
+  border-radius:20px ;
+
+}
+
+.interval-div {
+  border-radius: "20px";
+  text-align: "center";
+  width: "55px";
+  height: "fit-content";
+  border: "1px solid";
+  margin-right: "40px";
+  font-size: "12px";
+  margin-left: "40px";
+  margin-bottom: "10px";
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .chartitem-div {
+    margin-left: 165px;
+  }
+}
+
