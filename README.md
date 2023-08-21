@@ -3,9 +3,10 @@
 Welcome to the Real-Time Stock Price Prediction Web Application, InvesTech repository! This project hosts an intuitive web application that offers real-time stock price visualization and predictions using cutting-edge AI technologies. Built with React, Chart.js, and the integration of Machine Learning methods, this application provides a comprehensive platform for investors to make informed decisions and provide them with accurate forecasts.
 
 ## :computer: Live
+<img src='demo/ss.png'>
 
-https://github.com/zohairbadshah/InvesTech/assets/91787690/9b2ee17f-9d86-4340-b049-5eb0a35822dd
-
+Watch the live demo here:
+https://youtu.be/NRGSJnPG458
 ## :rocket: Highlights
 
 - **Live Price Tracking:** Monitor live stock prices with real-time updates.
@@ -21,13 +22,14 @@ https://github.com/zohairbadshah/InvesTech/assets/91787690/9b2ee17f-9d86-4340-b0
 
 ##  :open_file_folder: Project Structure
 
-- `/public`: Static assets and HTML templates.
-- `/src`: React components and application logic.
-- `/Components`: Reusable UI components.
-- `/Styles`: Styling files for components.
-- `/Services`: API services for fetching data.
-- `/Images`: Images used in the application.
-- `/python`: Python scripts for web scraping.
+- `Investech-web/public`: Static assets and HTML templates.
+- `Investech-web/src`: React components and application logic.
+- `Investech-web/Components`: Reusable UI components.
+- `Investech-web/Styles`: Styling files for components.
+- `Investech-web/backend`: API services for fetching data.
+- `Investech-Backend/mongoDbCli`: Python scripts for web scraping and storing in MongoDB.
+- `Investech-Backend/model`: Python scripts for Machine Learning and storing predictions in MongoDB.
+- `Investech-Backend/HistoricalData`: CSV files for historical data of companies for predictions.
 
 ## :construction_worker: Getting Started
 
@@ -40,7 +42,8 @@ https://github.com/zohairbadshah/InvesTech/assets/91787690/9b2ee17f-9d86-4340-b0
 
 - **Frontend:** React.js
 - **Backend:** Node.js, Express
-- **Web Scraping(live data):** Python (Seleniium, WebDriver)
+- **Web Scraping(live data):** Python (Selenium, WebDriver)
+- **MongoDB:** Storing complex time series data and efficient querying
 
 ## :bulb: Future Enhancements
 
