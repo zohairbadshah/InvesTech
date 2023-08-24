@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const express = require('express');
 const app = express();
 const cors = require("cors");
+const path=require("path")
 mongoose.connect('mongodb+srv://badshah:Badshahboy52@cluster0.icj6b.mongodb.net/?retryWrites=true&w=majority', {
 	dbName: 'StockData',
 	useNewUrlParser: true,
