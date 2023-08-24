@@ -17,7 +17,7 @@ console.log("App listen at port 5000");
 app.use(express.json());
 app.use(cors());
 app.use(express.json());
-
+app.use(express.static(path.join(__dirname, 'backend')));
 const stockDataRoutes = require('./routes/stockdata'); // Assuming you have a file with your stock data routes
 app.use('/api', stockDataRoutes); // Mount the stockDataRoutes to /api
 app.listen(5000);
