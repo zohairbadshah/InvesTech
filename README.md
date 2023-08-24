@@ -3,7 +3,7 @@
 Welcome to the Real-Time Stock Price Prediction Web Application, InvesTech repository! This project hosts an intuitive web application that offers real-time stock price visualization and predictions using cutting-edge AI technologies. Built with React, Chart.js, and the integration of Machine Learning methods, this application provides a comprehensive platform for investors to make informed decisions and provide them with accurate forecasts.
 
 ## :computer: Live
-<img src='demo/ss.png'>
+<img src='demo/ss.png'> 
 
 Watch the live demo here:
 https://youtu.be/NRGSJnPG458
