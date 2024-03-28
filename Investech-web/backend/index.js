@@ -18,14 +18,7 @@ mongoose.connect(MONGO_URI, {
 // Middleware
 app.use(express.json());
 app.use(cors());
-app.use(
-	session({
-	  secret: "your_secret_key",
-	  resave: false,
-	  saveUninitialized: false,
-	})
-  );
-  
+
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, '../build')));
 
