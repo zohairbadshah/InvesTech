@@ -1,24 +1,46 @@
-// To connect with your mongoDB database
 const mongoose = require('mongoose');
 const express = require('express');
+const cors = require('cors');
+const path = require('path'); // Require the 'path' module
 const app = express();
-const cors = require("cors");
-const path=require("path")
-mongoose.connect('mongodb+srv://badshah:Badshahboy52@cluster0.icj6b.mongodb.net/?retryWrites=true&w=majority', {
-	dbName: 'StockData',
-	useNewUrlParser: true,
-	useUnifiedTopology: true
-}).then(()=>{
-    console.log("Connected")
-}).catch((err)=>{
-    console.error("Error connecting",err.message)
-});
-// For backend and express
-console.log("App listen at port 5000");
+require('dotenv').config(); // Load environment variables
+
+// Connect to MongoDB using environment variables
+const { MONGO_URI, PORT } = process.env;
+mongoose.connect(MONGO_URI, {
+  dbName: 'StockData',
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+  .then(() => console.log('Connected to MongoDB'))
+  .catch((err) => console.error('Error connecting to MongoDB:', err.message));
+
+// Middleware
 app.use(express.json());
 app.use(cors());
-app.use(express.json());
-app.use(express.static(path.join(__dirname, 'backend')));
-const stockDataRoutes = require('./routes/stockdata'); // Assuming you have a file with your stock data routes
-app.use('/api', stockDataRoutes); // Mount the stockDataRoutes to /api
-app.listen(5000);
+app.use(
+	session({
+	  secret: "your_secret_key",
+	  resave: false,
+	  saveUninitialized: false,
+	})
+  );
+  
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, '../build')));
+
+// Routes
+const stockDataRoutes = require('./routes/stockdata');
+app.use('/api', stockDataRoutes);
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Something went wrong!');
+});
+
+// Start the server
+const port = PORT || 5000;
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
