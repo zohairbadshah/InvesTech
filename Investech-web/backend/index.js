@@ -6,7 +6,9 @@ const app = express();
 require('dotenv').config(); // Load environment variables
 
 // Connect to MongoDB using environment variables
-const { MONGO_URI, PORT } = process.env;
+// const { MONGO_URI, PORT } = process.env;
+const MONGO_URI="mongodb+srv://compass:pass1234@interviewofai.ta99uav.mongodb.net/"
+const PORT=5000
 mongoose.connect(MONGO_URI, {
   dbName: 'StockData',
   useNewUrlParser: true,
